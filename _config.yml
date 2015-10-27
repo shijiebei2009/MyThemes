@@ -20,6 +20,7 @@ widgets:
 #- douban
 - latest_comment
 - tagcloud
+- hot_comments
 - zhifubao
 - rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
