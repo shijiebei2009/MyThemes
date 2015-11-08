@@ -35,8 +35,8 @@ imglogo:
   src: img/logo.gif        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
 apple_icon: img/coffee.gif ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
-author_img: img/author.png ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
-banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
+author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
+banner_img: img/banner.jpg ## size:1920px*200px+. Banner Picture
 ### Theme Color 
 theme_color:
     ##theme: '#2ca6cb'    ##the defaut theme color is blue
@@ -62,16 +62,16 @@ creative_commons: none
 author:
   intro_line1:  "Hello , I'm Wang Xu in SHU."    ## your introduction on the bottom of the page
   intro_line2:  "志不强者智不达，言不信者行不果。"  ## the 2nd line
-  weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo:  1779238484    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
-  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  tsina:    ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban: shijiebei2009  ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
   zhihu: codepub.cn  ## e.g. jark  for http://www.zhihu.com/people/jark
   email: wangx89@126.com  ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
   github: shijiebei2009 ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
-  linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
+  linkedin: codepub  ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
   stackoverflow: 4204922  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
@@ -93,7 +93,7 @@ disqus_shortname:  ## shijiebei2009  ## e.g. wuchong   your disqus short name.
 #### Share button
 jiathis:
   enable: true ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id: 1427117547239104  ## e.g. 1889330 your jiathis ID. 
+  id: 2067139  ## e.g. 1889330 your jiathis ID. 
   tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
 
 #### Analytics
@@ -127,10 +127,13 @@ google_cse:
 ## title: search
 ## ---
 baidu_search:     ## http://zn.baidu.com/
-  enable: true
+  enable: false
   id: "1433674487421172828" ## e.g. "783281470518440642"  for your baidu search id
   site: http://zhannei.baidu.com/cse/search  ## default value : http://zhannei.baidu.com/cse/search your can change to your site instead of the default site
   
 tinysou_search:     ## http://tinysou.com/
   enable: false
   id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
+
+swift_search:
+  enable: true
