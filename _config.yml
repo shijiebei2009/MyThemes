@@ -1,139 +1,244 @@
-##### Menu
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+# Place your favicon.ico to /source directory.
+favicon: /favicon.ico
+# Set default keywords (Use a comma to separate)
+keywords: "IT草根, 代码馆, http://codepub.cn/"
+# Set rss to false to disable feed link.
+# Leave rss as empty to use site's feed link.
+# Set rss to specific value if you have burned your feed already.
+
+
+rss: /atom.xml
+# Specify the date when the site was setup
+since: 2015
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# When running hexo in a subdirectory (e.g. domain.tld/blog)
+# Remove leading slashes ( "/archives" -> "archives" )
 menu:
-  Home: /
-  Archives: /archives
-  Resume: /resume
-  Links: /links
-  About: /about
-## you can create `tags` and `categories` folders in `../source`.
-## And create a `index.md` file in each of them.
-## set `front-matter`as
-## layout: tags (or categories)
-## title: tags (or categories)
-## ---
+  home: /
+  archives: /archives
+  categories: /categories
+  tags: /tags
+  resume: /resume
+  about: /about
+  links: /links
+  commonweal: /404.html
+# Enable/Disable menu icons.
+# Icon Mapping:
+#   Map a menu item to a specific FontAwesome icon name.
+#   Key is the name of menu item and value is the name of FontAwsome icon.
+#   When an question mask icon presenting up means that the item has no mapping icon.
+menu_icons:
+  enable: false
+  # Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
+  commonweal: heartbeat
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
 
-#### Widgets
-widgets: 
-- category
-- tag
-#- links
-#- douban
-- latest_comment
-- tagcloud
-- hot_comments
-- zhifubao
-- rss
-## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
+# Schemes
+scheme: Mist
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+# Social links
+social:
+  GitHub: https://github.com/shijiebei2009
+  Linkedin: https://www.linkedin.com/in/codepub
+  Stackoverflow: http://stackoverflow.com/users/4204922/eric-wang
+  ZhiHu: https://www.zhihu.com/people/codepub.cn
+  DouBan: https://www.douban.com/people/shijiebei2009/
+  WeiBo: http://weibo.com/u/1779238484
+
+# Social Icons
+social_icons:
+  enable: true
+  # Icon Mappings
+  GitHub: github
+  Twitter: twitter
+  Weibo: weibo
+  Linkedin: linkedin
+  ZhiHu: zhihu
+  DouBan: douban
+  Stackoverflow: stackoverflow
 
 
-#### RSS 
-rss: /atom.xml ## RSS address.
+# Sidebar Avatar
+# in theme directory(source/images): /images/avatar.jpg
+# in site  directory(source/uploads): /uploads/avatar.jpg
+# default : /images/default_avatar.jpg
+avatar: /images/author.jpg
 
-#### Image
-imglogo:
-  enable: true             ## display image logo true/false.
-  src: img/logo.gif        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme  folder `/jacman/source/img`.     
-apple_icon: img/logo.gif ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
-author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
-banner_img: img/banner.jpg ## size:1920px*200px+. Banner Picture
-### Theme Color 
-theme_color:
-    ##theme: '#2ca6cb'    ##the defaut theme color is blue
-    theme: '#201E20'
-
-# 代码高亮主题
-# available: default | night
-highlight_theme: night
-
-#### index post is expanding or not 
-index:
-  expand: false           ## default is unexpanding,so you can only see the short description of each post.
-  excerpt_link: Read More  
-
-close_aside: false  #close sidebar in post page if true
-mathjax: false      #enable mathjax if true
-
-### Creative Commons License Support, see http://creativecommons.org/ 
-### you can choose: by , by-nc , by-nc-nd , by-nc-sa , by-nd , by-sa , zero
-creative_commons: none
-
-#### Author information
-author:
-  intro_line1:  "Hello , I'm Wang Xu in SHU."    ## your introduction on the bottom of the page
-  intro_line2:  "志不强者智不达，言不信者行不果。"  ## the 2nd line
-  weibo:  1779238484    ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
-  tsina:    ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  douban: shijiebei2009  ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu: codepub.cn  ## e.g. jark  for http://www.zhihu.com/people/jark
-  email: wangx89@126.com  ## e.g. imjark@gmail.com
-  twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github: shijiebei2009 ## e.g. wuchong for https://github.com/wuchong
-  facebook:   ## e.g. imjark for https://facebook.com/imjark
-  linkedin: codepub  ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
-  google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
-  stackoverflow: 4204922  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
-## if you set them, the corresponding  share button will show on the footer
-
-#### Toc
+plugins:
+- hexo-generator-feed
+# TOC in the Sidebar
 toc:
-  article: true   ## show contents in article.
-  aside: true     ## show contents in aside.
-## you can set both of the value to true of neither of them.
-## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
-
-#### Links
-# links:
-
-#### Comment
-duoshuo_shortname: codepub  ## e.g. wuchong   your duoshuo short name.
-disqus_shortname:  ## shijiebei2009  ## e.g. wuchong   your disqus short name.
-
-#### Share button
-jiathis:
-  enable: true ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id: 2067139  ## e.g. 1889330 your jiathis ID. 
-  tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
-
-#### Analytics
-google_analytics:
-  enable: false
-  id: UA-61517808-1  ## e.g. UA-46321946-2 your google analytics ID.
-  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
-## You MUST upgrade to Universal Analytics first!
-## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
-baidu_tongji:
   enable: true
-  sitecode: 2c61418f187553bcc869b755930233ab  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
-cnzz_tongji:
-  enable: false
-  siteid: 1254721753  ## e.g. 1253575964 your cnzz tongji site id
 
-#### Miscellaneous
-ShowCustomFont: true  ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
-fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
-totop: true           ## if you want to scroll to top in every post set the value to true
+  # Automatically add list number to toc.
+  number: true
 
 
-#### Custom Search
-google_cse: 
-  enable: false
-  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
-## https://www.google.com/cse/ 
-## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
-## set the 'front-matter' as
-## layout: search 
-## title: search
-## ---
-baidu_search:     ## http://zn.baidu.com/
-  enable: false
-  id: "1433674487421172828" ## e.g. "783281470518440642"  for your baidu search id
-  site: http://zhannei.baidu.com/cse/search  ## default value : http://zhannei.baidu.com/cse/search your can change to your site instead of the default site
-  
-tinysou_search:     ## http://tinysou.com/
-  enable: false
-  id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+creative_commons: by-nc-sa
+#creative_commons:
 
-swift_search:
+sidebar:
+  # Sidebar Position, available value: left | right
+  position: left
+  #position: right
+
+  # Sidebar Display, available value:
+  #  - post    expand on posts automatically. Default.
+  #  - always  expand for all pages automatically
+  #  - hide    expand only when click on the sidebar toggle icon.
+  #  - remove  Totally remove sidebar including sidebar toggle icon.
+  display: post
+  #display: always
+  #display: hide
+  #display: remove
+
+
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# ---------------------------------------------------------------
+
+# Custom Logo.
+# !!Only available for Default Scheme currently.
+# Options:
+#   enabled: [true/false] - Replace with specific image
+#   image: url-of-image   - Images's url
+custom_logo:
+  enabled: false
+  image:
+
+
+# Code Highlight theme
+# Available value:
+#    normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: normal
+
+# Automatically scroll page to section which is under <!-- more --> mark.
+scroll_to_more: true
+
+# Automatically Excerpt
+auto_excerpt:
   enable: true
+  length: 200
+
+# Use Lato font
+use_font_lato: true
+
+# ---------------------------------------------------------------
+# Third Party Services Settings
+# ---------------------------------------------------------------
+
+# MathJax Support
+mathjax: true
+
+# Swiftype Search API Key
+swiftype_key: CEs2u-bRR6iHSt4ynbFA
+
+#tinysou_Key: 
+#65eb24f485d19341d71954fd31525e24927214f1
+
+# Baidu Analytics ID
+baidu_analytics: 2c61418f187553bcc869b755930233ab
+
+# Duoshuo ShortName
+duoshuo_shortname: codepub
+duoshuo_hotartical: true
+
+# Disqus
+#disqus_shortname:
+
+# Baidu Share
+# Available value:
+#    button | slide
+# baidushare: true
+##  type: button
+
+# Share
+# jiathis: true
+# add_this_id: 
+
+# Share
+duoshuo_share: true
+
+# Google Webmaster tools verification setting
+# See: https://www.google.com/webmasters/
+#google_site_verification:
+
+
+# Google Analytics
+google_analytics: UA-61517808-1
+
+# CNZZ count
+#cnzz_siteid:
+
+
+# Make duoshuo show UA
+# user_id must NOT be null when admin_enable is true!
+# you can visit http://dev.duoshuo.com get duoshuo user id.
+duoshuo_info:
+  ua_enable: true
+  admin_enable: false
+  user_id: 0
+  #admin_nickname: ROOT
+
+
+# Facebook SDK Support.
+# https://github.com/iissnan/hexo-theme-next/pull/410
+facebook_sdk:
+  enable: false
+  app_id:       #<app_id>
+  fb_admin:     #<user_id>
+  like_button:  #true
+  webmaster:    #true
+
+
+# Show number of visitors to each article.
+# You can visit https://leancloud.cn get AppID and AppKey.
+leancloud_visitors:
+  enable: false
+  app_id: #<app_id>
+  app_key: #<app_key>
+
+
+# Tencent analytics ID
+# tencent_analytics:
+
+
+#! ---------------------------------------------------------------
+#! DO NOT EDIT THE FOLLOWING SETTINGS
+#! UNLESS YOU KNOW WHAT YOU ARE DOING
+#! ---------------------------------------------------------------
+
+# Motion
+use_motion: true
+
+# Fancybox
+fancybox: true
+
+# Static files
+vendors: vendors
+css: css
+js: js
+images: images
+
+# Theme version
+version: 0.5.0
