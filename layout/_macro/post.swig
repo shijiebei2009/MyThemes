@@ -79,10 +79,12 @@
               {% endfor %}
             </span>
           {% endif %}
-		  
-		<!-- 在下面的位置加上如下代码 -->
-        <span id="busuanzi_container_page_pv">&nbsp; | &nbsp; 热度&nbsp; <span id="busuanzi_value_page_pv"></span>°C</span>    
-        <!-- 在上面的位置加上如上代码 -->  
+		
+		{% if not is_index%}
+			<!-- 在下面的位置加上如下代码 -->
+			<span id="busuanzi_container_page_pv">&nbsp; | &nbsp; 热度&nbsp; <span id="busuanzi_value_page_pv"></span>°C</span>    
+			<!-- 在上面的位置加上如上代码 -->  
+		{% endif %}
 		  
           {% if post.comments %}
             {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}

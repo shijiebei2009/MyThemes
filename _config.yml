@@ -34,7 +34,7 @@ menu:
 #   Key is the name of menu item and value is the name of FontAwsome icon.
 #   When an question mask icon presenting up means that the item has no mapping icon.
 menu_icons:
-  enable: false
+  enable: true
   # Icon Mapping.
   home: home
   about: user
@@ -42,6 +42,8 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  links: link
+  resume: book
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -58,7 +60,7 @@ social:
   Stackoverflow: http://stackoverflow.com/users/4204922/eric-wang
   ZhiHu: https://www.zhihu.com/people/codepub.cn
   DouBan: https://www.douban.com/people/shijiebei2009/
-  WeiBo: http://weibo.com/u/1779238484
+  Weibo: http://weibo.com/u/1779238484
 
 # Social Icons
 social_icons:
@@ -196,9 +198,9 @@ google_analytics:
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: ROOT
+  admin_enable: true
+  user_id: 6264291807601885953
+  admin_nickname: 博主
 
 
 # Facebook SDK Support.
@@ -218,7 +220,10 @@ leancloud_visitors:
   app_id: #<app_id>
   app_key: #<app_key>
 
-
+## 文章末尾是否显示打赏按钮
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: http://7xig3q.com1.z0.glb.clouddn.com/weixin-donate.png
+alipay: http://7xig3q.com1.z0.glb.clouddn.com/alipay-donate.png
 # Tencent analytics ID
 # tencent_analytics:
 
