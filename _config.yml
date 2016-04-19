@@ -27,7 +27,7 @@ menu:
   resume: /resume
   about: /about
   links: /links
-  commonweal: /404.html
+#  commonweal: /404.html
 # Enable/Disable menu icons.
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -41,7 +41,7 @@ menu_icons:
   categories: th
   tags: tags
   archives: archive
-  commonweal: heartbeat
+#  commonweal: heartbeat
   links: link
   resume: book
 # ---------------------------------------------------------------
