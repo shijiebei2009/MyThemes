@@ -190,7 +190,7 @@ duoshuo_share: true
 google_analytics: 
 
 # CNZZ count
-#cnzz_siteid:
+cnzz_siteid: 1254721753
 
 
 # Make duoshuo show UA
