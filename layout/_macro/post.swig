@@ -124,10 +124,7 @@
         </div>
       </header>
     {% endif %}
-
-
     <div class="post-body" itemprop="articleBody">
-
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
@@ -191,6 +188,13 @@
     </div>
 
     <footer class="post-footer">
+	  {% if not is_index %}
+		<div class="copyright">
+		<p><span>
+		<b>本文地址：</b><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a><br/><b>转载请注明出处，谢谢！</b>
+		</span></p>
+		</div>
+	  {% endif %}
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
