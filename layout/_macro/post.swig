@@ -181,13 +181,7 @@
       {% endif  %}
     </div>
 
-    <div>
-      {% if ! is_index %}
-        {% include 'reward.swig' %}
-      {% endif %}
-    </div>
-
-    <footer class="post-footer">
+	<div align="center">
 	  {% if not is_index %}
 		<div class="copyright">
 		<p><span>
@@ -195,6 +189,14 @@
 		</span></p>
 		</div>
 	  {% endif %}
+	</div>
+    <div>
+      {% if ! is_index %}
+        {% include 'reward.swig' %}
+      {% endif %}
+    </div>
+
+    <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
