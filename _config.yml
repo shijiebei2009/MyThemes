@@ -174,8 +174,8 @@ duoshuo_hotartical: true
 # Baidu Share
 # Available value:
 #    button | slide
-# baidushare: true
-##  type: button
+#baidushare: true
+#type: button
 
 # Share
 # jiathis: true
