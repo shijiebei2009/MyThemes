@@ -190,6 +190,12 @@
 		</div>
 	  {% endif %}
 	</div>
+	<!-- 添加广告位 -->
+	<div>
+      {% if ! is_index %}
+        {% include 'advertisement.swig' %}
+      {% endif %}
+    </div>
     <div>
       {% if ! is_index %}
         {% include 'reward.swig' %}
