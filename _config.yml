@@ -165,24 +165,24 @@ swiftype_key: CEs2u-bRR6iHSt4ynbFA
 baidu_analytics: 2c61418f187553bcc869b755930233ab
 
 # Duoshuo ShortName
-duoshuo_shortname: codepub
-duoshuo_hotartical: true
+#duoshuo_shortname: codepub
+#duoshuo_hotartical: true
 
 # Disqus
-#disqus_shortname:
+disqus_shortname: codepubcn
 
 # Baidu Share
 # Available value:
 #    button | slide
-#baidushare: true
-#type: button
+baidushare: 
+  type: slide
 
 # Share
-# jiathis: true
-# add_this_id: 
+jiathis: true
+add_this_id: 2067139
 
 # Share
-duoshuo_share: true
+# duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -199,11 +199,11 @@ cnzz_siteid: 1254721753
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: true
-  user_id: 6264291807601885953
-  admin_nickname: 博主
+#duoshuo_info:
+#  ua_enable: true
+#  admin_enable: true
+#  user_id: 6264291807601885953
+#  admin_nickname: 博主
 
 
 # Facebook SDK Support.
