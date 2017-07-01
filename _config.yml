@@ -173,7 +173,7 @@ disqus_shortname: codepubcn
 # Baidu Share
 # Available value:
 #    button | slide
-baidushare: 
+baidushare:
   type: slide
 
 # Share
