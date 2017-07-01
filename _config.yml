@@ -69,10 +69,10 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
-  Linkedin: linkedin
-  ZhiHu: zhihu
-  DouBan: douban
-  Stackoverflow: stackoverflow
+  Linkedin: linkedin-square
+  ZhiHu: thumbs-up
+  DouBan: graduation-cap
+  Stackoverflow: stack-overflow
 
 
 # Sidebar Avatar
