@@ -151,8 +151,7 @@ use_font_lato: true
 # MathJax Support
 mathjax:
  enable: true
- cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-
+ cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
 
 # Swiftype Search API Key
 swiftype_key: CEs2u-bRR6iHSt4ynbFA
