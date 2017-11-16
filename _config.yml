@@ -352,7 +352,7 @@ mathjax:
 han: false
 
 # Swiftype Search API Key
-swiftype_key: CEs2u-bRR6iHSt4ynbFA
+# swiftype_key: CEs2u-bRR6iHSt4ynbFA
 
 # Baidu Analytics ID
 baidu_analytics: 2c61418f187553bcc869b755930233ab
@@ -590,7 +590,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
