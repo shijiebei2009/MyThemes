@@ -7,7 +7,7 @@
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
-  {% include '_partials/head.swig' %}
+  {{ partial('_partials/head.swig', {}, {cache: theme.cache.enable}) }}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
 </head>
@@ -23,7 +23,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
+      <div class="header-inner"> {{ partial('_partials/header.swig', {}, {cache: theme.cache.enable}) }} </div>
     </header>
 
     <main id="main" class="main">
@@ -43,7 +43,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        {% include '_partials/footer.swig' %}
+        {{ partial('_partials/footer.swig', {}, {cache: theme.cache.enable}) }}
         {% include '_third-party/analytics/analytics-with-widget.swig' %}
         {% block footer %}{% endblock %}
       </div>
@@ -81,6 +81,7 @@
   {% include '_third-party/comments/index.swig' %}
   {% include '_third-party/search/index.swig' %}
   {% include '_third-party/analytics/lean-analytics.swig' %}
+  {% include '_third-party/analytics/firestore.swig' %}
   {% include '_third-party/seo/baidu-push.swig' %}
   {% include '_third-party/needsharebutton.swig' %}
   {% include '_third-party/rating.swig' %}
