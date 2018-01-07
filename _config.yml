@@ -350,7 +350,7 @@ mathjax:
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
-han: false
+han: true
 
 # Swiftype Search API Key
 # swiftype_key: CEs2u-bRR6iHSt4ynbFA
@@ -665,7 +665,7 @@ motion:
 
 # Fancybox
 # Dependencies: https://github.com/theme-next/theme-next-fancybox
-fancybox: false
+fancybox: true
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
