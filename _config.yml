@@ -203,7 +203,14 @@ sidebar:
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
-
+# Post wordcount display settings
+# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+  awl: 5
+  wpm: 200
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -230,16 +237,6 @@ post_meta:
   created_at: true
   updated_at: true
   categories: true
-
-# Post wordcount display settings
-# Dependencies: https://github.com/theme-next/hexo-symbols-count-time
-symbols_count_time:
-  separated_meta: true
-  item_text_post: true
-  item_text_total: false
-  awl: 5
-  wpm: 200
-  
 # Wechat Subscriber
 #wechat_subscriber:
   #enabled: true
